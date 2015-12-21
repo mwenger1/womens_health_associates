@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Lag en ny Midwife
+            reorder: Endre rekkefølgen på Midwives
+            reorder_done: Ferdig å endre rekkefølgen Midwives
+          records:
+            title: Midwives
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Midwives enda. Klikk på "Lag en ny Midwife" for å legge til din første midwife.
+          midwife:
+            view_live_html: Vis hvordan denne midwife ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne midwife
+            delete: Fjern denne midwife permanent
+      midwives:
+        show:
+          other: Andre Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

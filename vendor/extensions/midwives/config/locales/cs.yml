@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Přidat Midwife
+            reorder: Řadit Midwives
+            reorder_done: Konec řazení Midwives
+          records:
+            title: Midwives
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Midwives. Zvolte "Přidat Midwife" pro přidání prvního midwife.
+          midwife:
+            view_live_html: Zobrazit náhled midwife<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit midwife
+            delete: Smazat midwife
+      midwives:
+        show:
+          other: Další Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

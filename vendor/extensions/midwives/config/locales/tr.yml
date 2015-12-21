@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Yeni Ekle Midwife
+            reorder: Tekrar sirala Midwives
+            reorder_done: Tekrar siralama tamamlandiMidwives
+          records:
+            title: Midwives
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Midwives yok henuz.  Tikla "Yeni Ekle Midwife" eklemek senin ilk midwife.
+          midwife:
+            view_live_html: Bunu canlu midwife goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle midwife
+            delete: Bunu Sil midwife sonsuza dek
+      midwives:
+        show:
+          other: Diger Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

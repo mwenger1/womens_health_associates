@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+#        article: masculino/femenino
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Crear nuevo midwife
+            reorder: Reordenar midwives
+            reorder_done: Reordenación de midwives completada
+          records:
+            title: Midwives
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay midwives todavía. Pulsa en "Crear nuevo Midwife" para crear tu primer midwife.
+          midwife:
+            view_live_html: Ver este midwife como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este midwife
+            delete: Borrar este midwife para siempre
+      midwives:
+        show:
+          other: Otros midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

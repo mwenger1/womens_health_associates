@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Aggiungi Nuovo Midwife
+            reorder: Riordina Midwives
+            reorder_done: Termina il Riordino di Midwives
+          records:
+            title: Midwives
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Midwives. Clicca "Aggiungi Nuovo Midwife" per aggiungere il tuo primo midwife.
+          midwife:
+            view_live_html: Guarda live questo midwife <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo midwife
+            delete: Rimuovi per sempre questo midwife
+      midwives:
+        show:
+          other: Altri Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

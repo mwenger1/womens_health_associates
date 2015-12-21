@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Midwives::Admin::MidwivesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.midwives_admin_midwives_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_midwives_admin_midwife_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Midwives::Admin::MidwivesController.sortable? && ::Refinery::Midwives::Midwife.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.midwives_admin_midwives_path,
+                     t('.reorder', what:  "Midwives"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.midwives_admin_midwives_path,
+                      t('.reorder_done', what: "Midwives"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

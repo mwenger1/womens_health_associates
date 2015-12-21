@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: 建立新的 Midwife
+            reorder: 对 Midwives 重新排序
+            reorder_done: 对 Midwives 的重新排序结束
+          records:
+            title: Midwives
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Midwives yet. Click "Add New Midwife" to add your first midwife.
+            no_items_yet: 目前没有 Midwives . 点击 "Add New Midwife" 创建一个midwife.
+          midwife:
+            view_live_html: 查看 midwife 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 midwife
+            delete: 永久删除 midwife
+      midwives:
+        show:
+          other: 其他 Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

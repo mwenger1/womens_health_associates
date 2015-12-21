@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Nieuwe Midwife toevoegen
+            reorder: De volgorde van de Midwives wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Midwife-volgorde
+          records:
+            title: Midwives
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Midwives. Druk op 'Nieuwe Midwife toevoegen' om de eerste toe te voegen.
+          midwife:
+            view_live_html: Deze midwife op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze midwife
+            delete: Deze midwife definitief verwijderen
+      midwives:
+        show:
+          other: Andere Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo

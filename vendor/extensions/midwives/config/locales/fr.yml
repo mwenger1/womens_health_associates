@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      midwives:
+        title: Midwives
+    midwives:
+      admin:
+        midwives:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Midwife
+            reorder: Réordonner les Midwives
+            reorder_done: Fin de réordonnancement des Midwives
+          records:
+            title: Midwives
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Midwife. Cliquer sur "Créer un(e) nouve(au/l/lle) Midwife" pour créer votre premi(er/ère) midwife.'
+          midwife:
+            view_live_html: Voir ce(t/tte) midwife <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) midwife
+            delete: Supprimer définitivement ce(t/tte) midwife
+      midwives:
+        show:
+          other: Autres Midwives
+  activerecord:
+    attributes:
+      'refinery/midwives/midwife':
+        name: Name
+        title: Title
+        description: Description
+        photo: Photo
