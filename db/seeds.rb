@@ -14,3 +14,6 @@ Refinery::Obstetricians::Engine.load_seed
 
 # Added by Refinery CMS Midwives extension
 Refinery::Midwives::Engine.load_seed
+
+# Added by Refinery CMS Testimonials extension
+Refinery::Testimonials::Engine.load_seed
