@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      obstetricians:
+        title: Obstetricians
+    obstetricians:
+      admin:
+        obstetricians:
+          actions:
+            create_new: Pridať Obstetrician
+            reorder: Preusporiadať Obstetricians
+            reorder_done: Koniec radenia Obstetricians
+          records:
+            title: Obstetricians
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Obstetricians. Kliknite na "Pridať Obstetrician" pre pridanie prvého obstetrician.
+          obstetrician:
+            view_live_html: Zobraziť náhľad obstetrician<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť obstetrician
+            delete: Zmazať obstetrician
+      obstetricians:
+        show:
+          other: Daľšie Obstetricians
+  activerecord:
+    attributes:
+      'refinery/obstetricians/obstetrician':
+        name: Name
+        title: Title
+        description: Description
+        quote: Quote
+        photo: Photo

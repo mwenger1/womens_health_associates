@@ -40,6 +40,13 @@ GIT
       globalize (>= 4.0.0, < 5.2)
       refinerycms-core (= 3.0.0)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-obstetricians (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -256,6 +263,7 @@ DEPENDENCIES
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
   refinerycms-authentication-devise (~> 1.0)
+  refinerycms-obstetricians!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

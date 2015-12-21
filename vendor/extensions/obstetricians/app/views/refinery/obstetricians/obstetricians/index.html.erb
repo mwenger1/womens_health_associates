@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="obstetricians">
+    <% @obstetricians.each do |obstetrician| %>
+      <li>
+        <%= link_to obstetrician.name, refinery.obstetricians_obstetrician_path(obstetrician) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

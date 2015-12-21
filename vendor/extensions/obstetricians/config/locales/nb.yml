@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      obstetricians:
+        title: Obstetricians
+    obstetricians:
+      admin:
+        obstetricians:
+          actions:
+            create_new: Lag en ny Obstetrician
+            reorder: Endre rekkefølgen på Obstetricians
+            reorder_done: Ferdig å endre rekkefølgen Obstetricians
+          records:
+            title: Obstetricians
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Obstetricians enda. Klikk på "Lag en ny Obstetrician" for å legge til din første obstetrician.
+          obstetrician:
+            view_live_html: Vis hvordan denne obstetrician ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne obstetrician
+            delete: Fjern denne obstetrician permanent
+      obstetricians:
+        show:
+          other: Andre Obstetricians
+  activerecord:
+    attributes:
+      'refinery/obstetricians/obstetrician':
+        name: Name
+        title: Title
+        description: Description
+        quote: Quote
+        photo: Photo

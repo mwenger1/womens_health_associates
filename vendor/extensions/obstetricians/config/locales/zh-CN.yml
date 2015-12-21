@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      obstetricians:
+        title: Obstetricians
+    obstetricians:
+      admin:
+        obstetricians:
+          actions:
+            create_new: 建立新的 Obstetrician
+            reorder: 对 Obstetricians 重新排序
+            reorder_done: 对 Obstetricians 的重新排序结束
+          records:
+            title: Obstetricians
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Obstetricians yet. Click "Add New Obstetrician" to add your first obstetrician.
+            no_items_yet: 目前没有 Obstetricians . 点击 "Add New Obstetrician" 创建一个obstetrician.
+          obstetrician:
+            view_live_html: 查看 obstetrician 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 obstetrician
+            delete: 永久删除 obstetrician
+      obstetricians:
+        show:
+          other: 其他 Obstetricians
+  activerecord:
+    attributes:
+      'refinery/obstetricians/obstetrician':
+        name: Name
+        title: Title
+        description: Description
+        quote: Quote
+        photo: Photo

@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      obstetricians:
+        title: Obstetricians
+    obstetricians:
+      admin:
+        obstetricians:
+          actions:
+            create_new: Yeni Ekle Obstetrician
+            reorder: Tekrar sirala Obstetricians
+            reorder_done: Tekrar siralama tamamlandiObstetricians
+          records:
+            title: Obstetricians
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Obstetricians yok henuz.  Tikla "Yeni Ekle Obstetrician" eklemek senin ilk obstetrician.
+          obstetrician:
+            view_live_html: Bunu canlu obstetrician goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle obstetrician
+            delete: Bunu Sil obstetrician sonsuza dek
+      obstetricians:
+        show:
+          other: Diger Obstetricians
+  activerecord:
+    attributes:
+      'refinery/obstetricians/obstetrician':
+        name: Name
+        title: Title
+        description: Description
+        quote: Quote
+        photo: Photo

@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Obstetricians::Admin::ObstetriciansController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.obstetricians_admin_obstetricians_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_obstetricians_admin_obstetrician_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Obstetricians::Admin::ObstetriciansController.sortable? && ::Refinery::Obstetricians::Obstetrician.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.obstetricians_admin_obstetricians_path,
+                     t('.reorder', what:  "Obstetricians"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.obstetricians_admin_obstetricians_path,
+                      t('.reorder_done', what: "Obstetricians"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

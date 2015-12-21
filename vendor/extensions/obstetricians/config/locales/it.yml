@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      obstetricians:
+        title: Obstetricians
+    obstetricians:
+      admin:
+        obstetricians:
+          actions:
+            create_new: Aggiungi Nuovo Obstetrician
+            reorder: Riordina Obstetricians
+            reorder_done: Termina il Riordino di Obstetricians
+          records:
+            title: Obstetricians
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Obstetricians. Clicca "Aggiungi Nuovo Obstetrician" per aggiungere il tuo primo obstetrician.
+          obstetrician:
+            view_live_html: Guarda live questo obstetrician <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo obstetrician
+            delete: Rimuovi per sempre questo obstetrician
+      obstetricians:
+        show:
+          other: Altri Obstetricians
+  activerecord:
+    attributes:
+      'refinery/obstetricians/obstetrician':
+        name: Name
+        title: Title
+        description: Description
+        quote: Quote
+        photo: Photo
