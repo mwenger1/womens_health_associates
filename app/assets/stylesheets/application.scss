@@ -15,5 +15,6 @@
  *= require refinery/theme
  *= require_self
  */
+@import 'bootstrap-sprockets';
 @import "bootstrap";
-@import "bootstrap/theme";
+@import "carousel";
