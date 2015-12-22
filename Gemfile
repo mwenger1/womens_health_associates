@@ -52,7 +52,7 @@ end
 
 gem 'sprockets-rails', '2.3.3'
 
-gem 'bootstrap-sass', '~> 3.1.0'
+gem 'bootstrap-sass', '~> 3.3'
 
 gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
 
