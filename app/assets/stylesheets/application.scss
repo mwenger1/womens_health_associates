@@ -18,3 +18,20 @@
 @import 'bootstrap-sprockets';
 @import "bootstrap";
 @import "carousel";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar a {
+  color: black;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: mistyrose;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: mistyrose;
+}
