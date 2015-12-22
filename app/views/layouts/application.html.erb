@@ -6,13 +6,15 @@
   </head>
   <body id="<%= canonical_id @page %>">
     <%= site_bar -%>
-    <div id="page_container">
-      <header id="header">
-        <%= render "/refinery/header" -%>
-      </header>
+    <header id="header">
+      <%= render "/refinery/header" -%>
+    </header>
+
+    <div class="container"
       <section id="page">
         <%= yield %>
       </section>
+      <hr class="featurette-divider">
       <footer>
         <%= render "/refinery/footer" -%>
       </footer>
