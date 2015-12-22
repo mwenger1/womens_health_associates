@@ -1,4 +1,52 @@
-<h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
-</h1>
-<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Connecticut Birthing Center</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/midwives">Midwives</a></li>
+                <li><a href="/obsetricians">Consulting Obstetricians</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Child Birth</li>
+                <li><a href="/prenatal-care">Prenatal Care</a></li>
+                <li><a href="/delivery">Delivery</a></li>
+                <li><a href="/post-delivery">Post Delivery</a></li>
+                <li><a href="/eligibility-and-cost">Eligibility and Cost</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Education</li>
+                <li><a href="/classes">Classes</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tour<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/photo-gallery">Photo Gallery</a></li>
+                <li><a href="/virtual-tour">Virtual Tour</a></li>
+              </ul>
+            </li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
