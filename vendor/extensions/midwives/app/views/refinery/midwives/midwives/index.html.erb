@@ -4,12 +4,16 @@
   </div>
 
   <% @midwives.each do |midwife| %>
-    <div class="row">
-      <%= image_fu midwife.photo, nil, class: "pull-#{cycle("left", "right")}" %>
-      <h3>
-        <%= "#{midwife.name}, #{midwife.title}" %>
-      </h3>
-      <p><%=raw midwife.description %></p>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-9 pull-<%= cycle("left", "right") %>">
+        <h2 class="featurette-heading"><%= midwife.name %>, <span class="text-muted"><%= midwife.title %></span></h2>
+        <p class="lead"><%=raw midwife.description %></p>
+      </div>
+      <div class="col-md-3">
+        <%= image_fu midwife.photo, nil, class: "featurette-image img-reponsive center-block", width: 250 %>
+      </div>
     </div>
   <% end %>
 </div>

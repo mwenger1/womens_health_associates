@@ -7,12 +7,12 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-8 pull-<%= cycle("left", "right") %>">
+      <div class="col-md-9 pull-<%= cycle("left", "right") %>">
         <h2 class="featurette-heading"><%= obstetrician.name %>, <span class="text-muted"><%= obstetrician.title %></span></h2>
         <p class="lead"><%=raw obstetrician.description %></p>
       </div>
-      <div class="col-md-4">
-        <%= image_fu obstetrician.photo, nil, class: "featurette-image img-reponsive center-block", width: 288 %>
+      <div class="col-md-3">
+        <%= image_fu obstetrician.photo, nil, class: "featurette-image img-reponsive center-block", width: 250 %>
       </div>
     </div>
   <% end %>
