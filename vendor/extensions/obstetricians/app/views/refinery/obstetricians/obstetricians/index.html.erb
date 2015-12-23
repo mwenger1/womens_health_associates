@@ -1,4 +1,8 @@
 <div class="container">
+  <div class="row">
+    <%= render '/refinery/content_page' %>
+  </div>
+
   <% @obstetricians.each do |obstetrician| %>
     <div class="row">
       <%= image_fu obstetrician.photo, nil, class: "pull-#{cycle("left", "right")}" %>
