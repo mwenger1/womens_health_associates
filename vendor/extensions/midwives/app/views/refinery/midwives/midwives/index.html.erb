@@ -1,11 +1,15 @@
-<% content_for :body do %>
-  <ul id="midwives">
-    <% @midwives.each do |midwife| %>
-      <li>
-        <%= link_to midwife.name, refinery.midwives_midwife_path(midwife) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<div class="container">
+  <div class="row">
+    <%= render '/refinery/content_page' %>
+  </div>
 
-<%= render '/refinery/content_page' %>
+  <% @midwives.each do |midwife| %>
+    <div class="row">
+      <%= image_fu midwife.photo, nil, class: "pull-#{cycle("left", "right")}" %>
+      <h3>
+        <%= "#{midwife.name}, #{midwife.title}" %>
+      </h3>
+      <p><%=raw midwife.description %></p>
+    </div>
+  <% end %>
+</div>

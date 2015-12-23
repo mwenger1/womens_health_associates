@@ -18,6 +18,8 @@
 @import 'bootstrap-sprockets';
 @import "bootstrap";
 @import "carousel";
+@import "sidebar";
+
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
@@ -45,24 +47,7 @@ body {
   margin-top: 10px;
 }
 
-.callout {
-  border: 6px solid mistyrose;
-  padding: 20px 15px;
-  margin-bottom: 15px;
-  font-size: 1.9em;
-  color: #333;
-  border-radius: 15px;
-  background-color: whitesmoke;
-
-  a {
-    color: slategray;
-  }
-}
 
 #body_content {
   text-align: justify;
-}
-
-.callout-container {
-  margin-top: 5em;
 }
