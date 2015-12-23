@@ -1,11 +1,12 @@
-<% content_for :body do %>
-  <ul id="obstetricians">
-    <% @obstetricians.each do |obstetrician| %>
-      <li>
-        <%= link_to obstetrician.name, refinery.obstetricians_obstetrician_path(obstetrician) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+<div class="container">
+  <% @obstetricians.each do |obstetrician| %>
+    <div class="row">
+      <%= image_fu obstetrician.photo, nil, class: "pull-#{cycle("left", "right")}" %>
+      <h3>
+        <%= "#{obstetrician.name}, #{obstetrician.title}" %>
+      </h3>
+      <p><%=raw obstetrician.description %></p>
+      <blockquote><%=raw obstetrician.quote %></blockquote>
+    </div>
+  <% end %>
+</div>
