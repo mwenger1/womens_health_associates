@@ -17,6 +17,7 @@
  */
 @import 'bootstrap-sprockets';
 @import "bootstrap";
+@import 'variables';
 @import "carousel";
 @import "sidebar";
 
@@ -36,11 +37,11 @@ body {
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: mistyrose;
+  background-color: $green;
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: mistyrose;
+  background-color: $green;
 }
 
 .navbar-header {
@@ -50,4 +51,12 @@ body {
 
 #body_content {
   text-align: justify;
+}
+
+.btn-primary {
+  background-color: $purple;
+}
+
+a {
+  color: $purple;
 }

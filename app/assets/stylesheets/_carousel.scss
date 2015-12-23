@@ -1,3 +1,4 @@
+@import 'variables';
 
 .carousel {
   height: 450px;
@@ -29,6 +30,7 @@
 }
 
 .carousel-caption {
-  color: orchid;
+  color: $blue;
   text-shadow: none;
+  font-weight: bold;
 }

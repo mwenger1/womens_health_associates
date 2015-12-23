@@ -1,8 +1,10 @@
+@import 'variables';
+
 .callout {
   padding: 20px 15px;
   margin-bottom: 15px;
   font-size: 1.9em;
-  border-bottom: 6px solid mistyrose;
+  border-bottom: 6px solid $green;
 
   a {
     color: slategray;
