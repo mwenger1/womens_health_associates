@@ -1,11 +1,13 @@
-<% content_for :body do %>
-  <ul id="testimonials">
-    <% @testimonials.each do |testimonial| %>
-      <li>
-        <%= link_to testimonial.name, refinery.testimonials_testimonial_path(testimonial) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<div class="container">
+  <div class="row">
 
-<%= render '/refinery/content_page' %>
+    <div class="row featurette">
+      <% @testimonials.each do |testimonial| %>
+          <div class="col-md-6 pull-left">
+            <h2 class="featurette-heading"><%= testimonial.name %>, <span class="text-muted"><%= testimonial.location %></span></h2>
+            <p class="lead"><%=raw testimonial.quote %></p>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
