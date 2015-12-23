@@ -63,6 +63,9 @@ body {
 }
 
 .featurette img {
-  width: 250px;
+  width: 200px;
   height: 100%;
+  margin-top: 20px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
