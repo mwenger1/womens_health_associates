@@ -21,4 +21,5 @@ $('.truncated').hide()
   .next().on('click', function(){
     $(this).toggleClass('glyphicon-minus')
       .prev().toggle();
+    $(this).parent().find(".ellipsis").toggle();
 });
