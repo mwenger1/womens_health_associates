@@ -6,7 +6,7 @@
           <div class="col-md-4 pull-left testimonial-container">
             <h3 class="featurette-heading"><%= testimonial.name %>, <span class="text-muted"><%= testimonial.location %></span></h3>
             <% quote = strip_tags(testimonial.quote) %>
-            <p><%= quote.split[0..40].join(" ") %> <span class="truncated"><%= quote %></span></p>
+            <p><%= quote.split[0..40].join(" ") %> <span class="truncated"><%= quote.split[41..-1].join(" ") %></span></p>
           </div>
       <% end %>
     </div>
