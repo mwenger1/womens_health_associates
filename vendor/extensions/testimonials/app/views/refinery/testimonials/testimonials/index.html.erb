@@ -6,7 +6,7 @@
           <div class="col-md-4 pull-left testimonial-container">
             <h3 class="featurette-heading"><%= testimonial.name %>, <span class="text-muted"><%= testimonial.location %></span></h3>
             <% quote = strip_tags(testimonial.quote).to_s %>
-            <% quote_1, quote_2 = quote.slice!(0..(quote.index(' ', 150))), quote %>
+            <% quote_1, quote_2 = quote.slice!(0..(quote.index(' ', 1))), quote %>
             <p><%= quote_1 %> <span class="truncated"><%= quote_2 %></span></p>
           </div>
       <% end %>
