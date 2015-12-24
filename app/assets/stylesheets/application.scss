@@ -15,6 +15,7 @@
  *= require refinery/theme
  *= require_self
  */
+@import 'bourbon';
 @import 'bootstrap-sprockets';
 @import "bootstrap";
 @import 'variables';
@@ -46,14 +47,14 @@ h1 {
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: $green;
+  background-color: darken($blue, 15%);
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: $green;
+  background-color: darken($blue, 15%);
 }
 
-.navbar-header {
+.navbar-logo {
   margin-top: 10px;
 }
 
@@ -88,5 +89,16 @@ h1 {
 
   li {
     border-right: 1px solid white;
+
+    &:last-child {
+      border-right: none;
+    }
   }
+}
+
+.dropdown-menu {
+  margin: 0;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

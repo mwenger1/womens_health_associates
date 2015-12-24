@@ -52,6 +52,8 @@ gem 'sprockets-rails', '2.3.3'
 
 gem 'bootstrap-sass', '~> 3.3'
 
+gem 'bourbon'
+
 gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
 
 gem 'quiet_assets', group: :development
