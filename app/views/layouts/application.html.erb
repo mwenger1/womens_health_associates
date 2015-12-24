@@ -7,11 +7,11 @@
   </head>
   <body id="<%= canonical_id @page %>">
     <%= site_bar -%>
-    <header id="header">
-      <%= render "/refinery/header" -%>
-    </header>
-
     <div class="container">
+      <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
+
       <section id="page">
         <%= yield %>
       </section>
