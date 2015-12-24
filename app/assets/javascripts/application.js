@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$('.truncated').hide()                       // Hide the text initially
+  .after('<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>') // Create toggle button
+  .next().on('click', function(){          // Attach behavior
+    $(this).toggleClass('glyphicon-minus')   // Swap the icon
+        .prev().toggle();                    // Hide/show the text
+});

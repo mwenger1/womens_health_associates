@@ -28,6 +28,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  margin-bottom: 1em;
+}
+
 .navbar a {
   color: black;
 }
@@ -68,4 +72,8 @@ body {
   margin-top: 20px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.testimonial-container {
+  border-bottom: 1px solid $purple;
 }
