@@ -5,7 +5,7 @@
       <% @testimonials.each do |testimonial| %>
           <div class="col-md-4 pull-left testimonial-container">
             <h3 class="featurette-heading"><%= testimonial.name %>, <span class="text-muted"><%= testimonial.location %></span></h3>
-            <p><%= strip_tags(testimonial.quote) %></p>
+            <p><%= strip_tags(testimonial.quote).split[0..40].join(" ") %></p>
           </div>
       <% end %>
     </div>
