@@ -64,7 +64,13 @@ h1 {
 }
 
 .btn-primary {
-  background-color: $purple;
+  background-color: darken($blue, 40%);
+  color: #fff !important;
+  border-color: darken($blue, 15%);
+  &:hover {
+    background-color: darken($blue, 15%);
+    border-color: darken($blue, 15%);
+  }
 }
 
 #page a {
