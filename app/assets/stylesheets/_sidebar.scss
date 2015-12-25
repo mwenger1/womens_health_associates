@@ -1,16 +1,28 @@
 @import 'variables';
 
 .callout {
-  padding: 20px 15px;
-  margin-bottom: 15px;
-  font-size: 1.9em;
-  border-bottom: 6px solid $green;
-
-  a {
-    color: slategray;
-  }
+  padding: 30px 20px;
+  margin-bottom: 0px;
+  font-size: 1.8em;
 }
 
 .callout-container {
   margin-top: 5em;
+  border: 5px solid $offwhite;
+
+  hr {
+    margin: 0;
+  }
+}
+
+.purple {
+  color: darken($purple, 20%) !important;
+}
+
+.green {
+  color: darken($green, 20%) !important;
+}
+
+.blue {
+  color: darken($blue, 20%) !important;
 }
