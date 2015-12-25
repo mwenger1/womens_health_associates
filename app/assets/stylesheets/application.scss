@@ -32,6 +32,8 @@ body {
 
 .container {
   background-color: white;
+  border-left: 1px solid $blue;
+  border-right: 1px solid $blue;
 }
 
 h1 {
@@ -92,10 +94,6 @@ h1 {
   filter: grayscale(100%);
 }
 
-.testimonial-container {
-  border: 1px solid $purple;
-}
-
 .nav-justified {
   background-color: $blue;
 
@@ -114,3 +112,19 @@ h1 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.testimonials {
+  p {
+    font-size: 0.9em;
+  }
+
+  h3 {
+  font-size: 18px;
+  }
+}
+
+.testimonial-container {
+  border: 1px solid $purple;
+  background-color: $offwhite;
+}
+
