@@ -74,6 +74,10 @@ h1 {
   background-color: $purple;
   color: #fff !important;
   border-color: darken($purple, 15%);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  border-radius: 4px;
   &:hover {
     background-color: darken($purple, 15%);
     border-color: darken($purple, 15%);
@@ -83,7 +87,6 @@ h1 {
 #page a {
   color: $dark-blue;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .featurette img {
