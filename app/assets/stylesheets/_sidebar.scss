@@ -1,20 +1,29 @@
 @import 'variables';
 
 .callout {
-  padding: 30px 20px;
+  padding: 30px 18px;
   margin-bottom: 0px;
   font-size: 1.8em;
   a {
-    text-decoration: none;
+    text-decoration: none !important;
+  }
+  .glyphicon {
+    position: relative;
+    top: -18px;
+    margin-right:5px;
   }
 }
 
 .callout-container {
-  margin-top: 5em;
+  margin: 5em 3em;
   border: 5px solid $offwhite;
 
   hr {
     margin: 0;
+  }
+
+  span {
+    display: inline-block;
   }
 }
 
