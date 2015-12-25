@@ -114,6 +114,8 @@ h1 {
 }
 
 .testimonials {
+  margin-top: 10px;
+
   p {
     font-size: 0.9em;
   }
@@ -124,8 +126,9 @@ h1 {
 }
 
 .testimonial-container {
-  border: 1px solid $purple;
   background-color: $offwhite;
+  border: 1px solid $blue;
+  padding: 10px;
 
   .testimonial-photo {
     width: 90px;
