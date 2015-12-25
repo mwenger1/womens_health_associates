@@ -126,5 +126,11 @@ h1 {
 .testimonial-container {
   border: 1px solid $purple;
   background-color: $offwhite;
+
+  .testimonial-photo {
+    width: 90px;
+    float: right;
+    margin-left: 15px;
+  }
 }
 

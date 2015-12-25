@@ -1,9 +1,10 @@
 <div class="featurette testimonials">
   <% @testimonials.each do |testimonial| %>
-      <div class="col-md-4 pull-left testimonial-container">
+      <div class="col-md-6 pull-left testimonial-container">
+        <%= image_fu testimonial.photo, nil, class: "testimonial-photo" %>
         <h3 class="featurette-heading"><%= testimonial.name %>, <span class="text-muted"><%= testimonial.location %></span></h3>
         <% quote = strip_tags(testimonial.quote).to_s %>
-        <% breakpoint = quote.index(' ', 150) %>
+        <% breakpoint = quote.index(' ', 300) %>
         <% if breakpoint %>
           <% quote_1, quote_2 = quote.slice!(0..breakpoint), quote %>
           <p><%= quote_1 %><span class="ellipsis">...</span> <span class="truncated"><%= quote_2 %></span></p>
