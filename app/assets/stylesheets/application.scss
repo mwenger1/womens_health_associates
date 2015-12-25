@@ -46,6 +46,10 @@ h1 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.navbar-static-top {
+  margin-bottom: 0;
+}
+
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: darken($blue, 15%);
 }
