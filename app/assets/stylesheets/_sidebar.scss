@@ -1,9 +1,9 @@
 @import 'variables';
 
 .callout {
-  padding: 30px 15px;
+  padding: 30px 10px;
   margin-bottom: 0px;
-  font-size: 1.6em;
+  font-size: 1.3em;
   a {
     text-decoration: none !important;
   }
@@ -13,12 +13,12 @@
     margin-right:5px;
   }
   .text {
-    width: 140px;
+    width: 120px;
   }
 }
 
 .callout-container {
-  margin: 5em 4em;
+  margin: 5em 0;
   border: 5px solid $offwhite;
 
   hr {
