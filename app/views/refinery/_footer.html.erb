@@ -1,6 +1,14 @@
-<footer style="text-align:center; font-size: 0.9em;">
-  <p >
+<footer style="text-align:center; font-size: 0.9em; margin: 20px;">
+  <p style="float: left">
     94 Locust Avenue  |  Danbury, CT 06810  |  <a href="tel:203-748-6000">(203) 748-6000</a>
   </p>
 
+  <div style="float: right;">
+    <%= link_to(
+      image_tag("facebook-logo", height: 50),
+      "https://www.facebook.com/ctbirthcenter/",
+      target: '_blank'
+    ) %>
+  </div>
+  <div style="clear: both;"></div>
 </footer>
