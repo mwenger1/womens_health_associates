@@ -5,8 +5,18 @@
     background-color: $blue;
   }
 
+  border-bottom: 1px solid #e7e7e7;
+  @include media($medium-screen) {
+    border-bottom: none;
+  }
+
   li {
+    line-height: 2em;
     border-right: 1px solid white;
+
+    a {
+      margin-bottom: 0;
+    }
 
     &:last-child {
       border-right: none;
@@ -26,7 +36,21 @@
     width: initial;
     text-align: left;
   }
+  li {
+    a {
+      line-height: 3em;
+    }
+  }
 }
+.nav > li > a:active {
+  background-color: #93b3ba;
+}
+
+.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 
 .navbar-header {
   width: 100%;
