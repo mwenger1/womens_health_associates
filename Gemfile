@@ -53,6 +53,7 @@ gem 'sprockets-rails', '2.3.3'
 gem 'bootstrap-sass', '~> 3.3'
 
 gem 'bourbon'
+gem 'neat', '~> 1.9.0'
 
 gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
 

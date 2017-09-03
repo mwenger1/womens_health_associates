@@ -1,26 +1,11 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require refinery/formatting
- *= require refinery/theme
- *= require_self
- */
 @import 'bourbon';
+@import 'neat';
 @import 'bootstrap-sprockets';
 @import "bootstrap";
 @import 'variables';
 @import "carousel";
 @import "sidebar";
+@import "navigation";
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
@@ -42,10 +27,6 @@ h1 {
 
 .navbar a {
   color: black;
-}
-
-.navbar-brand {
-  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .navbar-static-top {
@@ -95,25 +76,6 @@ h1 {
   margin-top: 20px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
-
-.nav-justified {
-  background-color: $blue;
-
-  li {
-    border-right: 1px solid white;
-
-    &:last-child {
-      border-right: none;
-    }
-  }
-}
-
-.dropdown-menu {
-  margin: 0;
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .testimonials {

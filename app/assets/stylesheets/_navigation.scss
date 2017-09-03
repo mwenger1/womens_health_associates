@@ -1,0 +1,78 @@
+
+
+.nav-justified {
+  @include media($medium-screen) {
+    background-color: $blue;
+  }
+
+  li {
+    border-right: 1px solid white;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.dropdown-menu {
+  margin: 0;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  text-align: center;
+
+  @include media($medium-screen) {
+    width: initial;
+    text-align: left;
+  }
+}
+
+.navbar-header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.navbar-default {
+  background-color: inherit;
+  border: none;
+
+  @include media($medium-screen) {
+    margin-bottom: 0;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand-logo {
+  width: 140px;
+
+  @include media($medium-screen) {
+    margin-left: 10px;
+    width: 200px;
+  }
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.navbar-collapse a {
+  color: black;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
+}
