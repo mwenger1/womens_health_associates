@@ -1,23 +1,26 @@
 <footer class="footer">
-  <p class="footer--contact-information">
-    94 Locust Avenue  |  Danbury, CT 06810  |  <a href="tel:203-748-6000">(203) 748-6000</a>
-  </p>
+  <div class="row">
+    <div class="col-sm-6 footer--container">
+      94 Locust Avenue, Danbury, CT 06810<br><a href="tel:203-748-6000">(203) 748-6000</a>
+    </div>
 
-  <div style="float: right;">
-    <%= link_to(
-      image_tag("facebook-logo", class: "footer--facebook-logo"),
-      "https://www.facebook.com/ctbirthcenter/",
-      target: '_blank'
-    ) %>
-  </div>
-  <div style="float: right; margin-right: 40px; text-align: center;">
-    <span style="float:left; font-weight: bold;"> Proud Participant</span>
-    <%= link_to(
-      image_tag("strong-start2", height: 40, style: "margin: 0 auto"),
-      "http://strong-start.org/",
-      style: "float: left; clear: both; width: 100%;",
-      target: '_blank'
-    ) %>
-  </div>
-  <div style="clear: both;"></div>
+    <div class="col-sm-offset-2 col-sm-3 footer--container">
+      <div class="row">
+        <div class="col-sm-6 footer--container">
+          <%= link_to(
+            image_tag("strong-start2", height: 40),
+            "http://strong-start.org/",
+            target: '_blank'
+          ) %>
+        </div>
+        <div class="col-sm-6 footer--container">
+          <%= link_to(
+            image_tag("facebook-logo", class: "footer--facebook-logo"),
+            "https://www.facebook.com/ctbirthcenter/",
+            target: '_blank'
+          ) %>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
 </footer>
