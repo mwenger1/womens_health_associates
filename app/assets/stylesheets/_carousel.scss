@@ -1,7 +1,10 @@
 @import 'variables';
 
 .carousel {
-  height: 450px;
+  height: 200px;
+  @include media($medium-screen) {
+    height: 450px;
+  }
   margin-bottom: 40px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -11,7 +14,10 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 450px;
+  height: 200px;
+  @include media($medium-screen) {
+    height: 450px;
+  }
   background-color: #777;
 }
 
