@@ -219,7 +219,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    rdoc (4.2.0)
+    rdoc (4.3.0)
     refinerycms-acts-as-indexed (2.0.1)
       acts_as_indexed (~> 0.8.0)
       decorators (~> 2.0.0)
@@ -309,4 +309,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.2
+   1.15.4
