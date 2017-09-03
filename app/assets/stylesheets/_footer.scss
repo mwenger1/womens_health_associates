@@ -1,0 +1,19 @@
+.footer {
+  text-align:center;
+  font-size: 0.9em;
+  @include media($medium-screen) {
+    margin: 20px;
+  }
+}
+
+.footer--contact-information {
+  float: left;
+}
+
+.footer--facebook-logo {
+  width: 120px;
+
+  @include media($medium-screen) {
+    width: 120px;
+  }
+}
